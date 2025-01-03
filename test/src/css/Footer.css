@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#footer img {
+    display: block;
+    width: 100%;
+    z-index: 999;
+}
+
+#footer-a {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 100px;
+    text-decoration: none;
+    color: #666;
+    font-size: large;
+}
+
+#copyright {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 50px;
+}

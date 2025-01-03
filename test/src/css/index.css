@@ -1,0 +1,252 @@
+body,
+html,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  /* 避免水平滾動條 */
+}
+
+#bg_sea {
+  width: 100%;
+  z-index: -1;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* 使圖片在淡出後不可見，避免佔據空間 */
+  }
+}
+
+.background-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.background-overlay2 img {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  object-fit: cover;
+  /* 初始透明度設置為1 */
+  animation: fadeOut 1.5s ease forwards;
+  /* 使用動畫淡出 */
+  animation-delay: 1s;
+  /* 延遲1秒執行動畫 */
+}
+
+#title-wan {
+  position: absolute;
+  width: 40%;
+  top: 12%;
+  left: 38%;
+  z-index: 3;
+}
+
+.banner {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  /* 將橫幅層級設置較低 */
+}
+
+.banner #bg_sea {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+#bg_mountain {
+  position: relative;
+  width: 100%;
+  top: -80px;
+  left: 0px;
+  z-index: 2;
+}
+
+#circle_ip {
+  position: absolute;
+  width: 20%;
+  bottom: 30%;
+  left: 18%;
+  z-index: 100;
+
+}
+
+#heart_ip {
+  position: absolute;
+  width: 20%;
+  bottom: 34%;
+  left: 78%;
+  z-index: 100;
+}
+
+/* 預設不顯示 hover 時的圖片 */
+.ip_hover-image {
+  display: none;
+  position: absolute;
+  top: -120%;
+  left: 0;
+  z-index: 10;
+}
+
+/* 當懸停時顯示圖片 */
+#circle_ip:hover .ip_hover-image {
+  display: block;
+}
+
+#heart_ip:hover .ip_hover-image {
+  display: block;
+}
+
+.services-section {
+  background-image: url('src/images/index/sercvice_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -50px;
+  padding-top: 100px;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  /* 保證其他區塊在背景上方 */
+}
+
+.services-section .service1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px 0;
+}
+
+.services-section .service2 {
+  display: flex;
+  justify-content: center;
+}
+
+.services-section .service1 img {
+  margin-right: 100px;
+  margin-bottom: 30px;
+  width: 24%;
+}
+
+.services-section .service1 img:last-child {
+  margin-right: 0;
+}
+
+.services-section .service2 img {
+  margin-right: 100px;
+  width: 28%;
+}
+
+.services-section .service2 img:last-child {
+  margin-right: 0;
+}
+
+#section_mainEvent_Top {
+  width: 100%;
+  height: 200px;
+}
+
+#section_mainEvent_Top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section_mainEvent {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 40px;
+  gap: 60px;
+}
+
+.section-mainEvent {
+  background-image: url('./images/index/section_bg_mainEvent.png');
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+#mainEvent-Left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#mainEvent-Left p {
+  font-size: 16px;
+}
+
+#mainEvent-Left h2 {
+  font-size: 24px;
+  color: #1684C8;
+  margin: 10px 0;
+}
+
+#mainEvent-Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 40px;
+  gap: 20px;
+}
+
+#mainEvent-Image {
+  height: 90%;
+}
+
+#mainEvent-Title {
+  margin: 30px 0;
+  width: 76%;
+}
+
+#mainEvent-Content {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+#mainEvent_Entry {
+  margin-top: 30px;
+  width: 180px;
+}
+
+#mainEvent-btnArrow {
+  padding-left: 20px;
+  gap: 5px;
+  display: flex;
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+}
+
+#mainEvent-arrow_Left :hover {
+  content: url(./src/images/index/arrow-left_hover.png);
+
+}
+
+#mainEvent-arrow_Right :hover {
+  content: url(./src/images/index/arrow-right_hover.png);
+}

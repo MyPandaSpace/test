@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar #logo {
+    margin: 10px 40px;
+}
+
+#navbar #icon {
+    display: flex;
+    margin: 20px 40px;
+    gap: 20px;
+}
+
+.main_Event {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(../src/images/Event/Banner_EventBg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.eventBanner-Img {
+    display: flex;
+}
+
+.season-event-carousel img {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    width: 26%;
+    height: 50%;
+    border-radius: 300px;
+}
+
+.detail-carousel-indicators {
+    position: absolute;
+    bottom: -200px;
+    display: flex;
+    gap: 10px;
+}
+
+#season_Event {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    scale: 1.1;
+}
+
+.season-event-carousel-indicators {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+
+.comment-Card-row1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding-right: 60px;
+    gap: 50px;
+}
+
+.comment-Card-row2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding-left: 60px;
+    gap: 50px;
+}
+
+#comment-Card1 {
+    background-image: url(../src/images/Event/comment_Card1.png);
+}
+
+#comment-Card2 {
+    background-image: url(../src/images/Event/comment_Card2.png);
+}
+
+#comment-Card3 {
+    background-image: url(../src/images/Event/comment_Card3.png);
+}
+
+.comment-Card {
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.user-medal {
+    position: absolute;
+    top: -32%;
+    left: 48%;
+    scale: 0.5;
+}
+
+.comment-Card img {
+    width: 100%;
+    margin-top: 5px;
+    padding: 0 40px;
+}
+
+.comment-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    color: #666;
+}
+
+.comment-content {
+    padding: 0 20px;
+    color: #666;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+}
+
+.event #event-Type {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 40px;
+}
+
+#event-Type1:hover {
+    background-image: url(../images/Event/event-Type1_hover.png);
+}
+
+#event-Type2:hover {
+    background-image: url(../images/Event/event-Type2_hover.png);
+}
+
+#event-Type3:hover {
+    background-image: url(../images/Event/event-Type3_hover.png);
+}
+
+.event #row-event_Card {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.event #row-event_Card hr {
+    width: 100%;
+    background-color: #DADADA;
+}
+
+.event #column-event_Card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px;
+}
+
+.event #column-event_Card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.event #column-event_Card small {
+    padding-left: 10px;
+}
+
+.event #column-event_Card h2 {
+    font-size: 20px;
+    color: #1684C8;
+    margin-bottom: 10px;
+}
+
+.event #column-event_Card p {
+    color: #666;
+    padding-left: 16px;
+}
+
+.event #event-Tags {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    color: #72B6E0;
+}

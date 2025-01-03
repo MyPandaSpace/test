@@ -1,0 +1,637 @@
+.step-list-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    margin-top: 120px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.step-list {
+    /* position: relative; */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #1684C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #1684C8;
+    position: relative;
+    z-index: 2;
+}
+
+.step-circle.active {
+    background-color: #1684C8;
+    border-color: #1684C8;
+    color: #fff;
+}
+
+.step-text {
+    margin: 0 10px;
+    color: #dadada;
+    font-size: 16px;
+}
+
+.step-text.active {
+    color: #666;
+    /* font-weight: bold; */
+}
+
+.step-line {
+    width: 88px;
+    height: 1px;
+    background-color: #dadada;
+    position: relative;
+    margin: 0 30px 0 10px;
+}
+
+.step-line.active {
+    background-color: #1684C8;
+}
+
+/* 適配手機版面 */
+@media (max-width: 768px) {
+    .step-line {
+        width: 50px;
+    }
+
+    .step-text {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+}
+
+.apply-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    display: flex;
+    gap: 40px;
+}
+
+/* 左側 */
+.apply_left h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 報名活動 */
+.apply-event-card {
+    display: flex;
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 50px 40px;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.apply-event-card::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "報名活動";
+    /* 標題 */
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.apply-event-card img {
+    width: 270px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.event-info {
+    margin-right: 16px;
+}
+
+.event-info h3 {
+    color: #1684C8;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    color: #666;
+    font-size: 18px;
+}
+
+.apply-price {
+    color: #666;
+    font-size: 36px;
+}
+
+.quantity-control {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    color: #1684C8;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-control button {
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 99px;
+    border: 1px solid #BEDFF4;
+    background: #BEDFF4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.apply-content-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 訂購人資料 表單 */
+.apply-form {
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 40px 0;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.apply-form::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "訂購人資料";
+    /* 標題 */
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.form-group {
+    padding: 0 40px 0;
+    margin-bottom: 5px;
+}
+
+.form-group-s {
+    padding: 0 68px 0;
+}
+
+.form-group label {
+    display: block;
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    font-size: 18px;
+    color: #666;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+}
+
+.form-group input:focus {
+    /* border: 1px solid blue; */
+}
+
+.form-group input::placeholder {
+    color: #dadada;
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px 40px 0;
+}
+
+.form-check input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1684C8;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* 沒用？？？？ */
+
+.form-check label {
+    color: #666;
+    font-size: 18px;
+}
+
+/* 報名須知 */
+.notice-content {
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 40px;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.notice-content::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "報名須知";
+    /* 標題 */
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.notice-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* 右側 */
+.apply_right {
+    flex: 1;
+    position: relative;
+}
+
+.applyCta {
+    margin-top: 25px;
+    width: 418px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+    /* 水平居中 */
+}
+
+.applyCta img {
+    display: block;
+    width: 100%;
+    /* 確保圖片全寬展示，根據需求調整 */
+}
+
+.order-summary {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 將內容置中 */
+    padding: 20px 0 10px;
+}
+
+.order-summary h2,
+.order-summary-2 h2 {
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.coupon-section {
+    margin-bottom: 20px;
+}
+
+.coupon-section span {
+    font-size: 20px;
+    display: block;
+    color: #666;
+    border-top: 1px solid #dadada;
+    padding-top: 20px;
+    margin-bottom: 8px;
+}
+
+.coupon-section small {
+    color: #666;
+    font-size: 16px;
+}
+
+.coupon-input {
+    display: flex;
+    gap: 8px;
+}
+
+.coupon-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+}
+
+.coupon-input button {
+    padding: 8px 16px;
+    background: #1684C8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.coupon-option {
+    color: #dadada;
+}
+
+.coupon-radio {
+    /* visibility: hidden; */
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 99;
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+}
+
+.coupon-radio::after {
+    /* 中間點點 */
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+input[type="radio"] {
+    color: #1684C8;
+}
+
+.price-summary {
+    border-top: 1px solid #dadada;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price-item {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}
+
+.total-price {
+    text-align: right;
+    font-size: 36px;
+    color: #2C2C2C;
+    margin-top: 20px;
+}
+
+.pay-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+/* Apply_page2 */
+.payment-method-card,
+.invoice-card {
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 50px 0;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.payment-method-card::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "付款方式";
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.invoice-card::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "發票/統一編號";
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.payment-options,
+.invoice-options {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.payment-box,
+.invoice-box {
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-option,
+.invoice-option {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-option input[type="radio"],
+.invoice-option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #1684C8;
+}
+
+.invoice-option input[type="text"] {
+    accent-color: #1684C8;
+}
+
+.payment-option label,
+.invoice-option label {
+    font-size: 20px;
+    color: #666;
+}
+
+.card-logos {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.card-logos img {
+    height: 24px;
+    width: auto;
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    flex: 1;
+    min-width: 0;
+}
+
+/* 注意事項 */
+.pay-notice-content {
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 50px 40px;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.pay-notice-content::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "注意事項";
+    /* 標題 */
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.pay-notice-content li {
+    font-size: 18px;
+    color: #666;
+}
+
+.invoice-fields {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+.invoice-fields .form-group {
+    margin-bottom: 0;
+}
+
+.notice-content ol {
+    padding-left: 20px;
+    color: #666;
+}
+
+.notice-content li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.order-notes {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dadada;
+}
+
+.order-notes label {
+    color: #666;
+    font-size: 18px;
+}
+
+.order-note {
+    margin-bottom: 10px;
+}
+
+.order-note-check {
+    margin-right: 10px;
+}
+
+.order-note-check[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #72B2DA;
+    align-items: center;
+}
+
+
+.applyCta-2 {
+    margin-top: 25px;
+    width: 418px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+    /* 水平居中 */
+}
+
+.applyCta-2 img {
+    display: block;
+    width: 100%;
+    /* 確保圖片全寬展示，根據需求調整 */
+}
+
+.order-summary-2 {
+    width: 320px;
+    position: absolute;
+    top: 0px;
+    left: 12%;
+    /* 將內容置中 */
+    padding: 20px 0 10px;
+}
+
+/* 修正 sticky 定位 */
+.step-list-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}

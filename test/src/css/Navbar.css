@@ -1,0 +1,32 @@
+@charset "UTF-8";
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar a {
+    height: fit-content;
+}
+
+#navbar #logo {
+    margin: 0px 40px;
+    padding-top: 20px;
+    width: 200px;
+}
+
+#navbar #icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    gap: 20px;
+}
+
+#navbar #navbar-Bg {
+    z-index: -1;
+}
